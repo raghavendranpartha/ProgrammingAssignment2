@@ -22,7 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 # This function returns the inverse of the matrix in the special matrix 'x'. If the matrix had changed (by calling the 
-# set function), it calculates the inverse using solve function, if not it returns the cached value
+# set function), it calculates the inverse using solve function, caches it, and returns the same. If the matrix
+# is unchanged, it returns the cached value
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   inv<-x$getInv()
